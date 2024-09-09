@@ -1,3 +1,41 @@
 *{
     box-sizing: border-box;
 }
+
+.btn-w{
+    width: 60px;
+}
+
+.marquee {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.card--img {
+    height: 300px; 
+    object-fit: cover;
+}
+
+.bg-jumbo{
+    background-image: url('./img/pexels-mikhail-nilov-6894103.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-jumbotron h1, .content-jumbotron p{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+}
